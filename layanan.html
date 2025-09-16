@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Layanan - WebinAja</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+<!-- Navbar -->
+<header class="bg-white shadow-md fixed w-full z-10">
+  <div class="container mx-auto flex items-center justify-between px-6 py-4">
+    <h1 class="text-2xl font-bold text-[#5D0E41]">WebinAja</h1>
+    <nav class="space-x-6">
+        <a href="index.html" class="hover:text-[#5D0E41]">Home</a>
+        <a href="layanan.html" class="text-[#5D0E41] font-semibold border-b-2 border-[#5D0E41]">Layanan</a>
+        <a href="daftar.html" class="hover:text-[#5D0E41]">Daftar</a>
+        <a href="about.html" class="hover:text-[#5D0E41]">Tentang</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Layanan -->
+<section class="pt-28 pb-20 container mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-10 text-center">Cara Memesan Jasa</h2>
+  <div class="grid md:grid-cols-4 gap-8 mb-16">
+    <!-- Step 1 -->
+    <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition text-center">
+      <div class="text-4xl font-bold text-[#5D0E41] mb-3">1</div>
+      <h3 class="text-xl font-semibold mb-3">Pilih Layanan</h3>
+      <p>Telusuri layanan kami dan tentukan jenis jasa sesuai kebutuhan Anda.</p>
+    </div>
+    <!-- Step 2 -->
+    <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition text-center">
+      <div class="text-4xl font-bold text-[#5D0E41] mb-3">2</div>
+      <h3 class="text-xl font-semibold mb-3">Konsultasi</h3>
+      <p>Diskusikan detail proyek dengan tim kami untuk menemukan solusi terbaik.</p>
+    </div>
+    <!-- Step 3 -->
+    <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition text-center">
+      <div class="text-4xl font-bold text-[#5D0E41] mb-3">3</div>
+      <h3 class="text-xl font-semibold mb-3">Pembayaran</h3>
+      <p>Lakukan pembayaran sesuai kesepakatan agar proyek bisa segera dimulai.</p>
+    </div>
+    <!-- Step 4 -->
+    <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition text-center">
+      <div class="text-4xl font-bold text-[#5D0E41] mb-3">4</div>
+      <h3 class="text-xl font-semibold mb-3">Proses & Hasil</h3>
+      <p>Tim kami mengerjakan proyek Anda dengan profesional hingga selesai.</p>
+    </div>
+  </div>
+
+  <!-- Form Pemesanan -->
+  <div class="bg-white shadow-lg rounded-lg p-8 max-w-2xl mx-auto">
+    <h3 class="text-2xl font-bold mb-6 text-center text-[#5D0E41]">Form Pemesanan Jasa</h3>
+    <form action="#" method="POST" class="space-y-5">
+      <div>
+        <label class="block mb-2 font-medium">Nama Lengkap</label>
+        <input type="text" name="nama" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#5D0E41]">
+      </div>
+      <div>
+        <label class="block mb-2 font-medium">Email</label>
+        <input type="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#5D0E41]">
+      </div>
+      <div>
+        <label class="block mb-2 font-medium">Pilih Layanan</label>
+        <select name="layanan" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#5D0E41]">
+          <option value="">-- Pilih --</option>
+          <option value="Website">Website Modern</option>
+          <option value="E-Commerce">E-Commerce</option>
+          <option value="Kustom">Proyek Kustom</option>
+        </select>
+      </div>
+      <div>
+        <label class="block mb-2 font-medium">Deskripsi Proyek</label>
+        <textarea name="deskripsi" rows="4" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#5D0E41]"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-[#5D0E41] text-white py-3 rounded-lg shadow hover:bg-[#40072d] transition">
+        Kirim Permintaan
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#5D0E41] text-white py-6 text-center mt-10">
+  <p>&copy; 2025 WebinAja. Semua Hak Dilindungi.</p>
+</footer>
+
+</body>
+</html>

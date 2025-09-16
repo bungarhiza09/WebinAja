@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Daftar Developer - WebinAja</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+<!-- Navbar -->
+<header class="bg-white shadow-md fixed w-full z-10">
+  <div class="container mx-auto flex items-center justify-between px-6 py-4">
+    <h1 class="text-2xl font-bold text-[#5D0E41]">WebinAja</h1>
+    <nav class="space-x-6">
+        <a href="index.html" class="hover:text-[#5D0E41]">Home</a>
+        <a href="layanan.html" class="hover:text-[#5D0E41]">Layanan</a>
+        <a href="daftar.html" class="text-[#5D0E41] font-semibold border-b-2 border-[#5D0E41]">Daftar</a>
+        <a href="about.html" class="hover:text-[#5D0E41]">Tentang</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Daftar Developer -->
+<section class="pt-28 pb-20 container mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-10 text-center">Daftar Sebagai Developer</h2>
+  <p class="text-center max-w-2xl mx-auto mb-10 text-gray-600">
+    Jika Anda seorang developer yang ingin menawarkan jasa melalui WebinAja, silakan isi form di bawah ini. 
+    Kami akan meninjau pendaftaran Anda dan menghubungi untuk langkah selanjutnya.
+  </p>
+
+  <!-- Form Pendaftaran Developer -->
+  <div class="bg-white shadow-lg rounded-lg p-8 max-w-2xl mx-auto">
+    <form action="#" method="POST" class="space-y-5">
+      <div>
+        <label class="block mb-2 font-medium">Nama Lengkap</label>
+        <input type="text" name="nama" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#5D0E41]">
+      </div>
+      <div>
+        <label class="block mb-2 font-medium">Email</label>
+        <input type="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#5D0E41]">
+      </div>
+      <div>
+        <label class="block mb-2 font-medium">Skill Utama</label>
+        <input type="text" name="skill" placeholder="Contoh: React, Laravel, UI/UX" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#5D0E41]">
+      </div>
+      <div>
+        <label class="block mb-2 font-medium">Pengalaman</label>
+        <select name="pengalaman" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#5D0E41]">
+          <option value="">-- Pilih --</option>
+          <option value="Junior">Junior (0-2 tahun)</option>
+          <option value="Middle">Middle (2-5 tahun)</option>
+          <option value="Senior">Senior (5+ tahun)</option>
+        </select>
+      </div>
+      <div>
+        <label class="block mb-2 font-medium">Link Portofolio / GitHub</label>
+        <input type="url" name="portfolio" placeholder="https://github.com/username" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#5D0E41]">
+      </div>
+      <div>
+        <label class="block mb-2 font-medium">Tentang Anda</label>
+        <textarea name="tentang" rows="4" placeholder="Ceritakan singkat tentang Anda" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#5D0E41]"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-[#5D0E41] text-white py-3 rounded-lg shadow hover:bg-[#40072d] transition">
+        Kirim Pendaftaran
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#5D0E41] text-white py-6 text-center mt-10">
+  <p>&copy; 2025 WebinAja. Semua Hak Dilindungi.</p>
+</footer>
+
+</body>
+</html>
